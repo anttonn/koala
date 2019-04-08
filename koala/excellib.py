@@ -99,7 +99,8 @@ IND_FUN = [
     "ROUNDUP",
     "POWER",
     "SQRT",
-    "TODAY"
+    "TODAY",
+    "XIRR",
 ]
 
 CELL_CHARACTER_LIMIT = 32767
@@ -417,6 +418,10 @@ def mod(nb, q): # Excel Reference: https://support.office.com/en-us/article/MOD-
         return ExcelError('#VALUE!', '%s is not an integer' % str(q))
     else:
         return nb % q
+
+
+def xirr(values, dates, guess): # Excel Reference: https://support.office.com/en-us/article/MOD-function-9b6cd169-b6ee-406a-a97b-edf2a9dc24f3
+    return 1 # todo
 
 
 def count(*args): # Excel reference: https://support.office.com/en-us/article/COUNT-function-a59cd7fc-b623-4d93-87a4-d23bf411294c

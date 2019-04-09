@@ -370,7 +370,7 @@ def match(lookup_value, lookup_range, match_type=1): # Excel reference: https://
         elif value is None:
             value = 0
 
-        return value;
+        return value
 
     lookup_value = type_convert(lookup_value)
 
@@ -470,7 +470,7 @@ def month(serial_number): # Excel reference: https://support.office.com/en-us/ar
     return m1
 
 
-def xirr(values, dates, guess): # Excel Reference: https://support.office.com/en-ie/article/xirr-function-de1242ec-6477-445b-b11b-a303ad9adc9d
+def xirr(values, dates, guess=0): # Excel Reference: https://support.office.com/en-ie/article/xirr-function-de1242ec-6477-445b-b11b-a303ad9adc9d
     return 1 # todo
 
 

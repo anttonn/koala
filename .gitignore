@@ -13,3 +13,6 @@ dist
 build
 eval*
 .pytest_cache
+.idea/
+venv/
+workflow/
